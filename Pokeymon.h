@@ -62,7 +62,8 @@ std::string name;
   int currentHealth;
   int maxHealth;
   int attack;
-
+  int defense;
+};
 
 /**
  * @brief getDescription returns a string description of the given Pokeymon.

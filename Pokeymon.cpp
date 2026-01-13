@@ -18,5 +18,5 @@ Type stringToType(const string& typeStr) {
    return Type::NORMAL; 
  }
 
- string typeToString(Type type) { if (type == Type::FIRE) return "FIRE";
+ string typeToString(Type type) { if (type == Type::FIRE) return "Fire";
  { return "Normal"; }

@@ -11,4 +11,5 @@ string getSetupVerificationMessage() {
     return "Setup is correct!";
 }
 
-Type stringToType(const string& typeStr) { return Type::NORMAL; }
+Type stringToType(const string& typeStr) { if (typeStr == "Fire") return Type::FIRE;
+  return Type::NORMAL; }

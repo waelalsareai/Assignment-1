@@ -18,8 +18,8 @@ TEST_CASE("setup verification")
  {
    cout << "(1) stringToType tests..." << endl;
    CHECK(stringToType("Fire") == Type::FIRE);
-//   CHECK(stringToType("Water") == Type::WATER);
-//   CHECK(stringToType("Ice") == Type::ICE);
+   CHECK(stringToType("Water") == Type::WATER);
+   CHECK(stringToType("Ice") == Type::ICE);
 //   CHECK(stringToType("Normal") == Type::NORMAL);
 
 //   // Test unknown string defaults to NORMAL

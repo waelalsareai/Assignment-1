@@ -20,19 +20,19 @@ TEST_CASE("setup verification")
    CHECK(stringToType("Fire") == Type::FIRE);
    CHECK(stringToType("Water") == Type::WATER);
    CHECK(stringToType("Ice") == Type::ICE);
-//   CHECK(stringToType("Normal") == Type::NORMAL);
+   CHECK(stringToType("Normal") == Type::NORMAL);
 
-//   // Test unknown string defaults to NORMAL
-//   CHECK(stringToType("") == Type::NORMAL);
+   // Test unknown string defaults to NORMAL
+   CHECK(stringToType("") == Type::NORMAL);
  }
 
  TEST_CASE("typeToString")
  {
-//   cout << "(2) typeToString tests..." << endl;
-//   CHECK(typeToString(Type::FIRE) == "Fire");
-//   CHECK(typeToString(Type::WATER) == "Water");
-//   CHECK(typeToString(Type::ICE) == "Ice");
-//   CHECK(typeToString(Type::NORMAL) == "Normal");
+   cout << "(2) typeToString tests..." << endl;
+   CHECK(typeToString(Type::FIRE) == "Fire");
+   CHECK(typeToString(Type::WATER) == "Water");
+   CHECK(typeToString(Type::ICE) == "Ice");
+   CHECK(typeToString(Type::NORMAL) == "Normal");
  }
 
  TEST_CASE("isStrongAgainst")

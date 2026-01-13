@@ -14,7 +14,7 @@ TEST_CASE("setup verification")
   cout << message << endl;
 }
 
-// TEST_CASE("stringToType")
+ TEST_CASE("stringToType")
 // {
 //   cout << "(1) stringToType tests..." << endl;
 //   CHECK(stringToType("Fire") == Type::FIRE);

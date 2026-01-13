@@ -48,8 +48,8 @@ TEST_CASE("setup verification")
    CHECK(isStrongAgainst(Type::NORMAL, Type::FIRE) == false);
  }
 
-// TEST_CASE("getDescription")
-// {
+ TEST_CASE("getDescription")
+ {
 //   cout << "(4) getDescription tests..." << endl;
 //   Pokeymon p = {"Testmon", Type::WATER, 80, 120, 40, 15};
 //   std::string desc = getDescription(p);

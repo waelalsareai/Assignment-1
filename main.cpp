@@ -2,7 +2,10 @@
 
 using namespace std;
 
+#include "Pokeymon.h"
+
 int main()
 {
-  cout << "Hello world" << endl;
+    string message = getSetupVerificationMessage();
+    cout << message << endl;
 }

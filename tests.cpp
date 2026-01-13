@@ -60,9 +60,9 @@ TEST_CASE("setup verification")
    CHECK(desc2 == "Name: Icy, Type: Ice, Health: 82/90, Atk: 25, Def: 15");
  }
 
-// TEST_CASE("getAttackDamage")
-//   Pokeymon attacker;
-//   attacker.attack = 50;
+ TEST_CASE("getAttackDamage")
+   Pokeymon attacker;
+   attacker.attack = 50;
 //   attacker.type = Type::FIRE;
 
 //   Pokeymon defender;

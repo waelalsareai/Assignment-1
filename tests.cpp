@@ -15,7 +15,7 @@ TEST_CASE("setup verification")
 }
 
  TEST_CASE("stringToType")
-// {
+ {
 //   cout << "(1) stringToType tests..." << endl;
 //   CHECK(stringToType("Fire") == Type::FIRE);
 //   CHECK(stringToType("Water") == Type::WATER);
@@ -24,7 +24,7 @@ TEST_CASE("setup verification")
 
 //   // Test unknown string defaults to NORMAL
 //   CHECK(stringToType("") == Type::NORMAL);
-// }
+ }
 
 // TEST_CASE("typeToString")
 // {

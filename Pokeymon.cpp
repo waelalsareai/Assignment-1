@@ -68,6 +68,10 @@ std::string attack(const Pokeymon& attacker, Pokeymon& defender)
   return out.str();
 }
 
-
+void battle(Pokeymon& p1, Pokeymon& p2)
+{
+  while (p1.currentHealth > 0 && p2.currentHealth > 0)
+  {
+    
 
 

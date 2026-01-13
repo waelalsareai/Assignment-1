@@ -72,6 +72,17 @@ void battle(Pokeymon& p1, Pokeymon& p2)
 {
   while (p1.currentHealth > 0 && p2.currentHealth > 0)
   {
+    std::cout << attack(p1, p2) << std::endl;
+    std::cout << p1.name << ": " << p1.currentHealth << "/" << p1.maxHealth
+              << " | " << p2.name << ": " << p2.currentHealth << "/" << p2.maxHealth
+              << std::endl;
+
+    if (p2.currentHealth == 0)
+    {
+      std::cout << p2.name << " has been defeated!" << std::endl;
+      return;
+    }
+
     
 
 

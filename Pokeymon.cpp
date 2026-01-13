@@ -10,3 +10,5 @@ using namespace std;
 string getSetupVerificationMessage() {
     return "Setup is correct!";
 }
+
+Type stringToType(const string& typeStr) { return Type::NORMAL; }

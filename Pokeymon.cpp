@@ -20,5 +20,6 @@ Type stringToType(const string& typeStr) {
 
  string typeToString(Type type) { 
   if (type == Type::FIRE) return "Fire";   
-      
+  if (type == Type::WATER) return "Water";
+  if (type == Type::ICE) return "Ice";    
   return "Normal"; }

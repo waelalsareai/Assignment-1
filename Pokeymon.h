@@ -58,7 +58,7 @@ bool isStrongAgainst(Type attacker, Type defender);
  */
 struct Pokeymon {
 std::string name;
-    Type type;
+  Type type;
   int currentHealth;
 
 

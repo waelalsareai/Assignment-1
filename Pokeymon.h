@@ -15,7 +15,9 @@ std::string getSetupVerificationMessage();
 /**
  * @brief Type enum represents the different types of Pokeymon.
  */
-// TODO - define the Type enum
+enum class Type { FIRE, WATER, ICE, NORMAL };
+ 
+
 
 /**
  * @brief 'typeToString' converts a Type enum to its string representation.

@@ -85,37 +85,37 @@ TEST_CASE("setup verification")
    CHECK(damage == 0); // Damage cannot be negative
  }
 
-// TEST_CASE("attack")
-// {
-//   cout << "(6) attack tests..." << endl;
-//   Pokeymon charmy;
-//   charmy.name = "Charmy";
-//   charmy.type = Type::FIRE;
-//   charmy.currentHealth = 100;
-//   charmy.maxHealth = 100;
-//   charmy.attack = 30;
-//   charmy.defense = 10;
+ TEST_CASE("attack")
+ {
+   cout << "(6) attack tests..." << endl;
+   Pokeymon charmy;
+   charmy.name = "Charmy";
+   charmy.type = Type::FIRE;
+   charmy.currentHealth = 100;
+   charmy.maxHealth = 100;
+   charmy.attack = 30;
+   charmy.defense = 10;
 
-//   Pokeymon icy;
-//   icy.name = "Icy";
-//   icy.type = Type::ICE;
-//   icy.currentHealth = 90;
-//   icy.maxHealth = 90;
-//   icy.attack = 25;
-//   icy.defense = 15;
+   Pokeymon icy;
+   icy.name = "Icy";
+   icy.type = Type::ICE;
+   icy.currentHealth = 90;
+   icy.maxHealth = 90;
+   icy.attack = 25;
+   icy.defense = 15;
 
-//   string result = attack(charmy, icy);
-//   CHECK(icy.currentHealth == 60);
-//   CHECK(result
-//         == "Charmy dealt 30 damage to Icy. Icy has 60 health remaining.");
+   string result = attack(charmy, icy);
+  CHECK(icy.currentHealth == 60);
+   CHECK(result
+         == "Charmy dealt 30 damage to Icy. Icy has 60 health remaining.");
 
-//   result = attack(icy, charmy);
-//   CHECK(charmy.currentHealth == 85);
-//   CHECK(result
-//         == "Icy dealt 15 damage to Charmy. Charmy has 85 health remaining.");
+   result = attack(icy, charmy);
+   CHECK(charmy.currentHealth == 85);
+   CHECK(result
+         == "Icy dealt 15 damage to Charmy. Charmy has 85 health remaining.");
 
-//   // Defender should not end with negative health
-//   icy.attack = 9000;
-//   result = attack(icy, charmy);
-//   CHECK(charmy.currentHealth == 0);
-// }
+   // Defender should not end with negative health
+   icy.attack = 9000;
+   result = attack(icy, charmy);
+   CHECK(charmy.currentHealth == 0);
+ }

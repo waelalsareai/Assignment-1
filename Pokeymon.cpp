@@ -44,6 +44,17 @@ std::string getDescription(const Pokeymon& p)
   return out.str();
 }
 
+int getAttackDamage(const Pokeymon& attacker, const Pokeymon& defender)
+{
+  int dmg = attacker.attack - defender.defense;
+  if (dmg < 0) dmg = 0;
+
+  if (isStrongAgainst(attacker.type, defender.type))
+    dmg *= 2;
+
+  return dmg;
+}
+
 
 
 

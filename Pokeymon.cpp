@@ -17,3 +17,5 @@ Type stringToType(const string& typeStr) {
    if (typeStr == "Ice") return Type::ICE;
    return Type::NORMAL; 
  }
+
+ 

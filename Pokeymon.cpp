@@ -19,3 +19,4 @@ Type stringToType(const string& typeStr) {
  }
 
  string typeToString(Type type) { return "Normal"; }
+ { return "Normal"; }

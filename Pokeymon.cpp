@@ -55,6 +55,19 @@ int getAttackDamage(const Pokeymon& attacker, const Pokeymon& defender)
   return dmg;
 }
 
+std::string attack(const Pokeymon& attacker, Pokeymon& defender)
+{
+  int dmg = getAttackDamage(attacker, defender);
+  defender.currentHealth -= dmg;
+  if (defender.currentHealth < 0) defender.currentHealth = 0;
+
+  std::ostringstream out;
+  out << attacker.name << " dealt " << dmg << " damage to " << defender.name
+      << ". " << defender.name << " has " << defender.currentHealth
+      << " health remaining.";
+  return out.str();
+}
+
 
 
 

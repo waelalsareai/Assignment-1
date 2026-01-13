@@ -60,6 +60,8 @@ struct Pokeymon {
 std::string name;
   Type type;
   int currentHealth;
+  int maxHealth;
+  int attack;
 
 
 /**

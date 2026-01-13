@@ -26,7 +26,7 @@ TEST_CASE("setup verification")
 //   CHECK(stringToType("") == Type::NORMAL);
  }
 
-// TEST_CASE("typeToString")
+ TEST_CASE("typeToString")
 // {
 //   cout << "(2) typeToString tests..." << endl;
 //   CHECK(typeToString(Type::FIRE) == "Fire");

@@ -18,4 +18,4 @@ Type stringToType(const string& typeStr) {
    return Type::NORMAL; 
  }
 
- 
+ string typeToString(Type type) { return "Normal"; }

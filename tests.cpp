@@ -35,18 +35,18 @@ TEST_CASE("setup verification")
 //   CHECK(typeToString(Type::NORMAL) == "Normal");
  }
 
-// TEST_CASE("isStrongAgainst")
-// {
-//   cout << "(3) isStrongAgainst tests..." << endl;
-//   CHECK(isStrongAgainst(Type::FIRE, Type::ICE) == true);
-//   CHECK(isStrongAgainst(Type::WATER, Type::FIRE) == true);
-//   CHECK(isStrongAgainst(Type::ICE, Type::WATER) == true);
+ TEST_CASE("isStrongAgainst")
+ {
+   cout << "(3) isStrongAgainst tests..." << endl;
+   CHECK(isStrongAgainst(Type::FIRE, Type::ICE) == true);
+   CHECK(isStrongAgainst(Type::WATER, Type::FIRE) == true);
+   CHECK(isStrongAgainst(Type::ICE, Type::WATER) == true);
 
-//   CHECK(isStrongAgainst(Type::FIRE, Type::WATER) == false);
-//   CHECK(isStrongAgainst(Type::WATER, Type::ICE) == false);
-//   CHECK(isStrongAgainst(Type::ICE, Type::FIRE) == false);
-//   CHECK(isStrongAgainst(Type::NORMAL, Type::FIRE) == false);
-// }
+   CHECK(isStrongAgainst(Type::FIRE, Type::WATER) == false);
+   CHECK(isStrongAgainst(Type::WATER, Type::ICE) == false);
+   CHECK(isStrongAgainst(Type::ICE, Type::FIRE) == false);
+   CHECK(isStrongAgainst(Type::NORMAL, Type::FIRE) == false);
+ }
 
 // TEST_CASE("getDescription")
 // {

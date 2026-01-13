@@ -32,4 +32,15 @@ Type stringToType(const string& typeStr) {
     return false;
 }
 
+std::string getDescription(const Pokeymon& p)
+{
+  std::ostringstream out;
+  out << "Name: " << p.name
+      << ", Type: " << typeToString(p.type)
+      << ", Health: " << p.currentHealth << "/" << p.maxHealth
+      << ", Atk: " << p.attack
+      << ", Def: " << p.defense;
+  return out.str();
+}
+
 

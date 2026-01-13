@@ -31,3 +31,5 @@ Type stringToType(const string& typeStr) {
     if (attacker == Type::ICE   && defender == Type::WATER) return true;
     return false;
 }
+
+

@@ -58,7 +58,7 @@ bool isStrongAgainst(Type attacker, Type defender);
  */
 struct Pokeymon {
   std::string name;
-
+  
 
 /**
  * @brief getDescription returns a string description of the given Pokeymon.

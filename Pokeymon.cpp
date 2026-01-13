@@ -23,3 +23,11 @@ Type stringToType(const string& typeStr) {
   if (type == Type::WATER) return "Water";
   if (type == Type::ICE) return "Ice";    
   return "Normal"; }
+
+  bool isStrongAgainst(Type attacker, Type defender)
+{
+    if (attacker == Type::FIRE  && defender == Type::ICE)   return true;
+    if (attacker == Type::WATER && defender == Type::FIRE)  return true;
+    if (attacker == Type::ICE   && defender == Type::WATER) return true;
+    return false;
+}

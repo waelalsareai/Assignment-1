@@ -61,8 +61,6 @@ TEST_CASE("setup verification")
 // }
 
 // TEST_CASE("getAttackDamage")
-// {
-//   cout << "(5) getAttackDamage tests..." << endl;
 //   Pokeymon attacker;
 //   attacker.attack = 50;
 //   attacker.type = Type::FIRE;

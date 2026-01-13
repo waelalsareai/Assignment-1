@@ -13,5 +13,7 @@ string getSetupVerificationMessage() {
 
 Type stringToType(const string& typeStr) {
    if (typeStr == "Fire") return Type::FIRE;
-   
-  return Type::NORMAL; }
+   if (typeStr == "Water") return Type::WATER;
+   if (typeStr == "Ice") return Type::ICE;
+   return Type::NORMAL; 
+ }
